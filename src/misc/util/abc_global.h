@@ -355,6 +355,7 @@ enum Abc_VerbLevel
 };
 static inline void Abc_Print( int level, const char * format, ... )
 {
+    /*
     extern ABC_DLL int Abc_FrameIsBridgeMode();
     va_list args;
 
@@ -380,10 +381,12 @@ static inline void Abc_Print( int level, const char * format, ... )
     else
         vprintf( format, args );
     va_end( args );
+    */
 }
 
 static inline void Abc_PrintInt( int i )
 {
+    /*
     double v3 = (double)i/1000;
     double v6 = (double)i/1000000;
 
@@ -405,6 +408,7 @@ static inline void Abc_PrintInt( int i )
         Abc_Print( 1, "%4.1fm", v6 );
     else if ( v6 > -999.5 && v6 < 999.5 )
         Abc_Print( 1, "%4.0fm", v6 );
+    */
 }
 
 static inline void Abc_PrintTime( int level, const char * pStr, abctime time )
